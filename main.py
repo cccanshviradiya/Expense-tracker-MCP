@@ -671,14 +671,14 @@ def categories() -> str:
     with open(CATEGORIES_PATH, "r", encoding="utf-8") as f:
         return f.read()
 
-def run_server():
-    mcp.run(transport="http", host="0.0.0.0", port=8000)
-
-
-if __name__ == "__main__":
-    run_server()
-
-
-# # ── entrypoint ────────────────────────────────────────────────────────────────
-# if __name__ == "__main__":
+# def run_server():
 #     mcp.run(transport="http", host="0.0.0.0", port=8000)
+
+
+# if __name__ == "__main__":
+#     run_server()
+
+
+# ── entrypoint ────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    mcp.run(transport="http", host="0.0.0.0", port=8000)
